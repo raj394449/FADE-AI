@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADE-AI - Deepfake Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>FADE- AI</h1>
+
+        <form id="uploadForm" action="/predict" method="post" enctype="multipart/form-data">
+            <div class="upload-box" onclick="document.getElementById('fileInput').click();">
+                <input type="file" id="fileInput" name="image" accept="image/*" required>
+                <img src="{{ url_for('static', filename='image.png') }}" width="50" alt="Upload Icon">
+                <p id="file-name">UPLOAD IMAGE</p>
+            </div>
+            <button type="submit" class="upload-btn">Analyze Image</button>
+        </form>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
