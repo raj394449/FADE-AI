@@ -1,4 +1,4 @@
-# This Model is gives the correct prediction for images
+# This Model is gives the correct prediction for images but accuracy is not accurate.
 
 # Load model directly from Huggingface.co
 from transformers import AutoImageProcessor, AutoModelForImageClassification
