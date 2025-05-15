@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f0eb;
+    background-color: #000000;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 .container {
     width: 50%;
     margin: 50px auto;
-    background: #e8e0d9;
+    background: #9ebdc9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -22,7 +22,7 @@ h1 {
 }
 
 .upload-box {
-    background: #f0f2e4;
+    background: #eedde2;
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
